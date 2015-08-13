@@ -1,26 +1,18 @@
-package main.java;
+package main.java.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.Length;
 
-public class BatteryResponse {
-    private long id;
+public class BatteryRegiestResponse {
 
-    @Length(max = 3)
     private String content;
 
-    public BatteryResponse() {
+    public BatteryRegiestResponse() {
         // Jackson deserialization
     }
 
-    public BatteryResponse(long id, String content) {
-        this.id = id;
+    public BatteryRegiestResponse(String content) {
         this.content = content;
-    }
-
-    @JsonProperty
-    public long getId() {
-        return id;
     }
 
     @JsonProperty
