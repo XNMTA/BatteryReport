@@ -1,0 +1,1 @@
+java -jar BatteryReport-1.0-SNAPSHOT.jar server config.yaml
